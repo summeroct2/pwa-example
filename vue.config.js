@@ -12,15 +12,12 @@ module.exports = {
     proxy: {
       '/api': {
         // target: 'https://api.douban.com/v2',
-        target: 'http://news-at.zhihu.com/api/4/',
+        target: 'http://news-at.zhihu.com',
         changeOrigin: true,
         pathRewrite: {
-          '^/api': '/'
+          '^/api': '/api'
         }
       }
     }
-  },
-  // pwa: {
-  //   name: '正在热映x',
-  // }
+  }
 }
